@@ -1,31 +1,57 @@
 <html>
     <style>
-        img.shown{
+        .shown{
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
-        input.search{
+        .search{
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
-        button.button{
+        .button{
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+        a:visited {
+            color: black;
+        }
+        .headerL {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .headerR {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .footerL {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .footerR {
+            position: absolute;
+            right: 0;
+            bottom: 0;
         }
     </style>
+
     <header>
-        <p>
+        <p class="headerL">
             <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
             <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+        </p>
+        <p class="headerR">
             <a href="">Gmail</a>
             <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
         </p>
     </header>
     <body>
-        <img class="shown" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <img class="shown" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
         <input class="search" type="text">
         <button class="button" type="button">
             Google Search
@@ -33,12 +59,16 @@
         <button class="button" type="button">
             I'm Feeling Lucky
         </button>
+        
     </body>
     <footer>
-        <p>
+        <p class="footerL">
             <a href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000078-0000000000&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1#!/">Advertising</a>
             <a href="https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/">Business</a>
             <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
+            
+        </p>
+        <p class="footerR">
             <a href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
             <a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
             <a href="">Settings</a>

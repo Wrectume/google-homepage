@@ -9,23 +9,6 @@
             font-family: ariel, sans-serif;
             
         }
-        .shown{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-        .search{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .button{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
         a:visited {
             color: #222;
             text-decoration: none;
@@ -35,60 +18,117 @@
             text-decoration: none;
         }
         .headerL {
-            position: absolute;
-            left: 15;
-            top: 0;
-            padding: 5px;
+            border: 1px solid rgb(240, 5, 5);
+            background-color: rgb(182, 88, 166);
+            margin: 10px;
         }
         .headerR {
-            position: absolute;
-            right: 120px;
-            top: 0;
+            border: 1px solid rgb(240, 5, 5);
+            background-color: rgb(182, 88, 166);
+            margin: 10px;
         }
         .footerL {
-            position: absolute;
-            left: 0;
-            bottom: 0;
+            border: 1px solid rgb(240, 5, 5);
+            background-color: rgb(182, 88, 166);
+            margin: 10px;
         }
         .footerR {
+            border: 1px solid rgb(240, 5, 5);
+            background-color: rgb(182, 88, 166);
+            margin: 10px;
+
+        }
+        .img{
+            background-color: greenyellow;
+        }
+        .input{
+            background-color: rgb(228, 76, 49);
+        }
+        .button{
+            background-color: rgb(54, 53, 114);
+        }
+        .container-header{
+            display:flex;
+            background-color: rgb(114, 114, 197);
+            height: 60px;
+            justify-content: space-between;
+        }
+        .container-img{
+            display:flex;
+            background-color: rgb(86, 168, 97);
+            height: 135;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-body{
+            display:flex;
+            background-color: rgb(86, 168, 97);
+            height: 100px;
+            justify-content: center;
+        }
+        .container-footer{
+            display:flex;
+            background-color: rgb(114, 114, 197);
+            height: 100px;
+            justify-content: space-between;
             position: absolute;
-            right: 0;
-            bottom: 0;
+            bottom: 10;
+            left: 10;
+            right:10;
         }
     </style>
 
     <header>
-        <p class="headerL">
-            <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
-            <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
-        </p>
-        <p class="headerR">
-            <a href="">Gmail</a>
-            <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
-        </p>
+        <div class="container-header">
+            <div class="headerL">
+                <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+                <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+            </div>
+            <div class="headerR">
+                <a href="">Gmail</a>
+                <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+            </div>
+        </div>
     </header>
+
     <body>
-            <img class="shown" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-        <input class="search" type="text">
-        <button class="button" type="button">
-            Google Search
-        </button>
-        <button class="button" type="button">
-            I'm Feeling Lucky
-        </button>
-        
-    </body>
-    <footer>
-        <p class="footerL">
-            <a href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000078-0000000000&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1#!/">Advertising</a>
-            <a href="https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/">Business</a>
-            <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
+        <div class="container-img">
+            <div class="img">
+                <img class="shown" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            </div>
+        </div>
+        <div class="container-body">
+            <div>
+                
+                <div class="input">
+                    <input class="search" type="text">
+                </div>
+                <div class="button">
+                    <button class="button" type="button">
+                        Google Search
+                    </button>
+                    <button class="button" type="button">
+                     I'm Feeling Lucky
+                    </button>
+                </div>
+                
+            </div>
+        </div>
             
-        </p>
-        <p class="footerR">
-            <a href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
-            <a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
-            <a href="">Settings</a>
-        </p>
+    </body>
+
+    <footer>
+        <div class="container-footer">
+            <div class="footerL">
+                <a href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000078-0000000000&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1#!/">Advertising</a>
+                <a href="https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/">Business</a>
+                <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
+            </div>
+            <div class="footerR">
+                <a href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
+                <a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
+                <a href="">Settings</a>
+            </div>
+        </div>
     </footer>
 </html>
